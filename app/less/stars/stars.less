@@ -1,0 +1,116 @@
+/* POSITION: ** */
+
+.stars {
+  position: relative;
+  margin: 20px 0 20px 175px;
+
+  & input {
+    opacity: 0;
+    width: 44px;
+    height: 40px;
+    position: relative;
+    z-index: -100;
+
+    &:checked, &:checked ~ label {
+      background-position: 0 100%;
+    }
+
+  }
+  & label {
+    background: url("../icon/stars.png") 0 0 no-repeat;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+
+    &:hover, &:hover ~ label {
+      background-position: 0 100%;
+    }
+
+    &[for=star-1] { left: 168px; }
+    &[for=star-2] { left: 126px; }
+    &[for=star-3] { left: 84px; }
+    &[for=star-4] { left: 42px; }
+    &[for=star-5] { left: 0; }
+  }
+
+  &:before {
+    content: "IE9+ Позиционирование";
+    position: absolute;
+    left: -165px;
+  }
+}
+
+/* FLEX-BOX */
+
+.stars-flex {
+  margin: 20px 0 20px 125px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  & input {
+    display: none;
+
+    &:checked, &:checked ~ label {
+      background-position: 0 100%;
+    }
+
+  }
+  & label {
+    background: url("../icon/stars.png") 0 0 no-repeat;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover, &:hover ~ label {
+      background-position: 0 100%;
+    }
+  }
+
+  &:before {
+    content: "IE11+ Flex-box";
+    position: absolute;
+    left: -115px;
+  }
+}
+
+/* Stars-JS */
+
+.stars-js {
+  margin: 20px 0 20px 75px;
+  position: relative;
+  height: 40px;
+
+  .star {
+    background: url("../icon/stars.png") 0 0 no-repeat;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+
+    &.active, &.active ~ .star {
+      background-position: 0 100%;
+    }
+    
+    &:hover, &:hover ~ .star {
+      background-position: 0 100%;
+    }
+
+  }
+
+
+  #star-js-1 { left: 168px; }
+  #star-js-2 { left: 126px; }
+  #star-js-3 { left: 84px; }
+  #star-js-4 { left: 42px; }
+  #star-js-5 { left: 0; }
+
+  &:before {
+    content: "IE9+ JS";
+    position: absolute;
+    left: -65px;
+  }
+}

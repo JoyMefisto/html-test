@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test-html-page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="b-page">
+        <aside class="b-page__aside">
+            <p class="text">
+                &#10026; TutuRu - крупнейший сервис поиска, бронирования и покупки авибилетов и ж/д блетов.
+            </p>
+            <p class="text">
+                Наша цель проста - делать наших клиентов счастливыми, а их путешествия не забываемыми.
+                Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц.
+                А мы делаем это качественно, обеспечивая самую лучшею поддержку благодаря собственному контакт-центру.
+            </p>
+        </aside>
+
+        <section class="b-page__main">
+            <nav class="b-page__main_navigation">
+                <span class="sandwich">
+                    <span class="sw-topper"></span>
+                    <span class="sw-bottom"></span>
+                    <span class="sw-footer"></span>
+                </span>
+                <div class="block__link">
+                    <a href="#" class="link">Личный кабинет</a>
+                    <a href="#" class="link">Раздел 1</a>
+                    <a href="#" class="link">Раздел 2</a>
+                    <a href="#" class="link">Раздел 3</a>
+                    <a href="#" class="link">Раздел 4</a>
+                    <a href="#" class="link">Раздел 5</a>
+                </div>
+            </nav>
+            <div class="b-page__main_title">
+                <h1 class="title">Заполните форму</h1>
+                <ul class="list">
+                    <li class="item active">1</li>
+                    <li class="item active">2</li>
+                    <li class="item active">3</li>
+                    <li class="item">4</li>
+                    <li class="item">5</li>
+                </ul>
+            </div>
+            <div class="b-page__main_delimiter"><span class="text">Общая информация</span></div>
+            <form action="index.html" class="b-form" name="user-form" method="get" id="my-form">
+                <div class="b-form_row">
+                    <div class="b-form_row__block">
+                        <h6 class="title">Фамилия</h6>
+                        <input type="text" name="sourname" class="input">
+                    </div>
+                    <div class="b-form_row__block">
+                        <h6 class="title">Имя</h6>
+                        <input type="text" name="name" class="input">
+                    </div>
+                    <div class="b-form_row__block">
+                        <h6 class="title">Отчество</h6>
+                        <input type="text" name="patronymic" class="input">
+                    </div>
+                </div>
+
+                <div class="b-form_row">
+                    <div class="b-form_row__block">
+                        <h6 class="title">Меняли фамилию?</h6>
+                        <div class="block">
+                            <input type="radio" class="radio" id="answer_yes" name="answer">
+                            <label for="answer_yes">Да</label>
+
+                            <input type="radio" class="radio" id="answer_no" name="answer" checked>
+                            <label for="answer_no">Нет</label>
+                        </div>
+                    </div>
+                    <div class="b-form_row__block">
+                        <h6 class="title">Пол</h6>
+                        <div class="block">
+                            <input type="radio" class="radio" id="gender_man" name="gender">
+                            <label for="gender_man">Муж</label>
+
+                            <input type="radio" class="radio" id="gender_woman" name="gender" checked>
+                            <label for="gender_woman">Жен</label>
+                        </div>
+                    </div>
+                    <div class="b-form_row__block">
+                        <h6 class="title">Семейное положение</h6>
+                        <select name="family" id="family">
+                            <option value="varried" selected>Женат / Замужем</option>
+                            <option value="divorced">В разводе</option>
+                            <option value="single">Холост / не замужем</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="b-form_row">
+                    <div class="b-form_row__block">
+                        <h6 class="title">Гражданство</h6>
+                        <div class="block">
+                            <select name="country" id="country">
+                                <option value="Russia" selected>Российская Федерация</option>
+                                <option value="England">Англия</option>
+                                <option value="Germany">Германия</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="b-form_row__block">
+                        <h6 class="title">Дата рождения</h6>
+                        <div class="block">
+                            <select name="bth_day" id="bth_day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="bth_month" id="bth_month">
+                                <option value="январь">январь</option>
+                                <option value="февраль">февраль</option>
+                                <option value="март">март</option>
+                                <option value="апрель">апрель</option>
+                                <option value="май">май</option>
+                                <option value="июнь">июнь</option>
+                                <option value="июль">июль</option>
+                                <option value="август">август</option>
+                                <option value="сентябрь">сентябрь</option>
+                                <option value="октябрь">октябрь</option>
+                                <option value="ноябрь">ноябрь</option>
+                                <option value="декабрь">декабрь</option>
+                            </select>
+                            <select name="bth_year" id="bth_year">
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form_row">
+                    <div class="b-form_row__block-fw">
+                        <h6 class="title">Место рождения</h6>
+                        <input type="text" name="bth_city" class="input">
+                        <span class="description">Например, Россия, Комсомольск-на-Амуре</span>
+                    </div>
+                </div>
+            </form>
+            <section class="b-page__main_block-arrow">
+                <a href="chunks.html" class="button button_next"><i class="icon">&larr;</i> Назад</a>
+                <button class="button button_prev" type="submit" form="my-form">Далее <i class="icon">&rarr;</i></button>
+            </section>
+        </section>
+    </div>
+
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

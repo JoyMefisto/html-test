@@ -1,0 +1,1 @@
+"use strict";!function(i,t,c){c(t).ready(function(){var i=c(".stars-js");i.on("click",".star",function(){i.find(".active").removeClass("active"),c(this).addClass("active")}),c(".sandwich").on("click",function(){c(this).toggleClass("active")})})}(window,document,jQuery);

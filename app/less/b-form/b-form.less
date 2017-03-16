@@ -1,0 +1,95 @@
+.b-form {
+
+  &_row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+
+    .title {
+      font-size: 12px;
+      line-height: 12px;
+      margin-bottom: 10px;
+    }
+
+    &__block {
+      width: 32%;
+      margin-bottom: 30px;
+      min-width: 200px;
+    }
+
+    &__block-fw {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__block, &__block-fw {
+
+      &:not(:last-child) {
+        margin-right: 2%;
+      }
+
+      .input {
+        width: 100%;
+      }
+
+      .block {
+        position: relative;
+
+        .radio {
+          display: none;
+        }
+
+        label {
+          padding: 5px;
+          cursor: pointer;
+        }
+
+        .radio:checked + label {
+          padding: 2px 5px;
+          border-radius: 5px;
+          margin: 0;
+          color: @white_1;
+          background-color: @green_5;
+        }
+
+        .radio + label {
+          margin: 0 5px;
+          padding: 5px 0 0;
+          color: #000;
+          border-bottom: 1px dotted @green_5;
+          background-color: transparent;
+        }
+      }
+
+      .description {
+        color: @gray_6;
+        font-size: 11px;
+        line-height: 11px;
+      }
+    }
+
+  }
+}
+
+@media screen and ( max-width: 680px ) {
+  .b-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_row {
+      flex-wrap: wrap;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and ( max-width: 480px ) {
+  .b-form {
+    flex-direction: column;
+
+    &_row {
+      width: 100%;
+    }
+  }
+}
